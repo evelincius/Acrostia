@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+.home-page {
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 100%;
+    position: relative;
+}
+.page-header {
+     content: '';
+     clear: both;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+.slides {
+    position: relative;
+}
+.carousel-text-wrap {
+    width: 840px;
+    height: 170px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+}
+
+
+.prev, .next {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    width: 33px;
+    height: 56px;
+ }
+.prev {
+    background-image: url('../img/left-arrow.png');
+    left: 50px;
+}
+.next {
+    right: 50px;
+    background-image: url('../img/right-arrow.png');
+}
+
