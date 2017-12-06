@@ -12,16 +12,56 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 14px;
 }
+
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
+
+header {
+    width: 1140px;
+    display: inline-flex;
+    height: 75px;
+}
+h2 {
+    line-height: 1;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 180px;
+    padding-bottom: 45px;
+    margin: 0;
+    text-align: center;
+}
+h3 {
+    line-height: 1;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    margin: 0;
+    text-align: center;
+}
+h4 {
+    line-height: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffcccf;
+    padding-bottom: 120px;
+    margin: 0;
+    text-align: center;
+}
 .home-page {
     min-height: 100%;
+    width: 100%;
     position: relative;
     background: #2c3e50;
-
 }
 
 .home-page::after {
@@ -31,9 +71,10 @@ img {
     bottom: 0;
     right: 0;
     z-index: 10;
-    max-width: 100%;
     position: absolute;
+    width: 100%;
     background: url("../img/bc-img-home.png") no-repeat center center;
+    background-size: 100%;
 }
 
 .img-carousel {
@@ -41,14 +82,12 @@ img {
     margin: 0 auto;
 }
 
-.page-header {
-    width: 1140px;
-    display: inline-flex;
-    position: absolute;
+.home-page-header {
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 20;
+    z-index: 30;
 }
 
 .slides {
@@ -90,8 +129,7 @@ img {
 }
 
 .prev, .next {
-    background-color: Transparent;
-    background-repeat: no-repeat;
+    background: Transparent no-repeat;
     position: absolute;
     top: 50%;
     margin-top: -28px;
@@ -133,6 +171,7 @@ img {
     justify-content: flex-end;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .menu-list-item {
@@ -145,4 +184,74 @@ img {
 .list-item-link {
     text-decoration: none;
     color: #ffffff;
+}
+.services-page, .about-page  {
+    min-height: 100%;
+    width: 100%;
+    background-size: 100%;
+    padding-bottom: 125px;
+}
+.services-page {
+    background: #b24a50 url("../img/bg-img-services.png") no-repeat;
+}
+.about-page {
+    background: #665464 url("../img/bg-img-services.png") no-repeat;
+}
+.content-wrap {
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+}
+.red-text {
+    color: #ec9da2;
+}
+.services-blocks-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+.services-block {
+    width: 23%;
+    background: rgba(196, 81, 88, 0.8);
+    padding: 45px 25px;
+}
+.block-icon-link {
+    text-decoration: none;
+    color: #b24a50;
+    text-align: center;
+    font-size: 65px;
+}
+.icon-wrap{
+    display: block;
+    margin: 0 auto 30px;
+    width: 145px;
+    height: 145px;
+    line-height: 145px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+.icon-ring {
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    border-radius: 50%;
+    border: 5px solid #b24a50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -65px;
+    margin-left: -65px;
+}
+.services-block-heading {
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 48px;
+}
+.services-block-paragraph {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
 }
