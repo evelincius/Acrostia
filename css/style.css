@@ -195,7 +195,7 @@ h4 {
     background: #b24a50 url("../img/bg-img-services.png") no-repeat;
 }
 .about-page {
-    background: #665464 url("../img/bg-img-services.png") no-repeat;
+    background: #665464 url("../img/bg-img-about.png") no-repeat;
 }
 .content-wrap {
     margin: 0 auto;
@@ -255,3 +255,11 @@ h4 {
     font-size: 14px;
     line-height: 20px;
 }
+.about-page-heading {
+    padding-bottom: 35px;
+}
+.about-page-subheading {
+    color: #e5d1e3;
+    padding-bottom: 60px;
+}
+
